@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mapp_course/views/widget_tree.dart';
+import 'package:flutter_mapp_course/views/widgets/hero_widget.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -11,10 +12,7 @@ class WelcomePage extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: Column(
           children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(20.0),
-              child: Image.asset("assets/images/bg_1.jpg"),
-            ),
+            HeroWidget(),
 
             FilledButton(
               onPressed: () {

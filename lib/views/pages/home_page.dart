@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mapp_course/data/notifiers.dart';
+import 'package:flutter_mapp_course/views/widgets/hero_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        children: [
-          Text("Home"),
-        ],
-      ),
+    return Padding(
+      padding: EdgeInsets.all(20.0),
+      child: Column(children: [HeroWidget()]),
     );
   }
 }
