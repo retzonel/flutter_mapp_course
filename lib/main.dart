@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mapp_course/data/notifiers.dart';
 import 'package:flutter_mapp_course/views/pages/welcome_page.dart';
-import 'package:flutter_mapp_course/views/widget_tree.dart';
-import 'package:flutter_mapp_course/views/widgets/navbar_widget.dart';
 
 void main() {
   runApp(const MyApp());

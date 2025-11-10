@@ -35,6 +35,36 @@ class _SettingsPageState extends State<SettingsPage> {
                   setState(() {});
                 },
               ),
+              ElevatedButton(
+                onPressed: () {
+                  showDialog(
+                    context: context,
+                    builder: (context) {
+                      return AlertDialog(
+                        content: Text("Alert Content"),
+                        title: Text("Alert Title"),
+                        actions: [CloseButton()],
+                      );
+                    },
+                  );
+                },
+                child: Text("Open Dialogue"),
+              ),
+
+              Divider(thickness: 5.0, endIndent: 200.0, color: Colors.teal, indent: 50,),
+              
+
+              ElevatedButton(
+                onPressed: () {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text("SnackBar"),
+                      behavior: SnackBarBehavior.floating,
+                    ),
+                  );
+                },
+                child: Text("Open SnackBar"),
+              ),
 
               DropdownButton(
                 value: menuItem,
@@ -117,8 +147,6 @@ class _SettingsPageState extends State<SettingsPage> {
                 ),
                 child: Text("Elevated Button"),
               ),
-
-              ElevatedButton(onPressed: () {}, child: Text("Elevated Button")),
 
               FilledButton(onPressed: () {}, child: Text("Filled Button")),
 
