@@ -7,8 +7,18 @@ class AppStyles {
     fontSize: 18,
   );
 
-   static const TextStyle descritionText = TextStyle(
+  static const TextStyle descritionText = TextStyle(
     fontWeight: FontWeight.w300,
     fontSize: 15,
   );
+}
+
+class KeyConstants {
+  static const String ligthModeKey = "isLigth";
+}
+
+class ConstantValues {
+  static const String hi = "hi";
+  static const String ho = "ho";
+  static const String ha = "ha";
 }
