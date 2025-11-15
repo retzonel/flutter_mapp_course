@@ -21,4 +21,6 @@ class ConstantValues {
   static const String hi = "hi";
   static const String ho = "ho";
   static const String ha = "ha";
+  static const String hu = "hu";
+  static const String he = "he";
 }

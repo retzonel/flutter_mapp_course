@@ -17,8 +17,7 @@ class WidgetTree extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Flutter Mapp"),
-        centerTitle: true,
-        // automaticallyImplyLeading: false,
+        
         actions: [
           ValueListenableBuilder(
             valueListenable: isLigthModeNotifier,
