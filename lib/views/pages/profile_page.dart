@@ -11,10 +11,17 @@ class ProfilePage extends StatelessWidget {
       padding: EdgeInsets.all(20.0),
       child: Column(
         children: [
+          CircleAvatar(
+            radius: 50,
+            backgroundImage: AssetImage("assets/images/b-008.jpg"),
+          ),
+
+          SizedBox(height: 20),
+
           SizedBox(
             child: ListTile(
               title: Text("Log Out"),
-              tileColor: Colors.teal.shade900,
+
               onTap: () {
                 selectedPageNotifier.value = 0;
                 Navigator.push(

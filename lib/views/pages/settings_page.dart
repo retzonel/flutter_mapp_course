@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mapp_course/views/pages/expanded_flexible_test.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key, required this.title});
@@ -51,8 +52,12 @@ class _SettingsPageState extends State<SettingsPage> {
                 child: Text("Open Dialogue"),
               ),
 
-              Divider(thickness: 5.0, endIndent: 200.0, color: Colors.teal, indent: 50,),
-              
+              Divider(
+                thickness: 5.0,
+                endIndent: 200.0,
+                color: Colors.teal,
+                indent: 50,
+              ),
 
               ElevatedButton(
                 onPressed: () {
@@ -146,6 +151,24 @@ class _SettingsPageState extends State<SettingsPage> {
                   foregroundColor: Colors.white,
                 ),
                 child: Text("Elevated Button"),
+              ),
+
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return ExpandedFlexibleTest();
+                      },
+                    ),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.teal,
+                  foregroundColor: Colors.white,
+                ),
+                child: Text("Show Flexible and Expanded"),
               ),
 
               FilledButton(onPressed: () {}, child: Text("Filled Button")),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mapp_course/data/constants.dart';
 import 'package:flutter_mapp_course/views/pages/course_page.dart';
-import 'package:flutter_mapp_course/views/pages/settings_page.dart';
 import 'package:flutter_mapp_course/views/widgets/container_widget.dart';
 import 'package:flutter_mapp_course/views/widgets/hero_widget.dart';
 
@@ -23,15 +22,18 @@ class HomePage extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 20,),
-            HeroWidget(title: "Flutter Mapp", nextPage: CoursePage(),),
-            
+            SizedBox(height: 20),
+            HeroWidget(title: "Flutter Mapp", nextPage: CoursePage()),
+
+            SizedBox(height: 5),
             ...List.generate(list.length, (index) {
               return ContainerWidget(
                 title: list.elementAt(index),
                 description: "description",
               );
             }),
+
+            SizedBox(height: 5),
           ],
         ),
       ),
