@@ -35,8 +35,7 @@ class _MyAppState extends State<MyApp> {
     return ValueListenableBuilder(
       valueListenable: isLigthModeNotifier,
       builder: (context, value, child) {
-        return MaterialApp(
-          debugShowCheckedModeBanner: false,
+        return MaterialApp( 
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(
               seedColor: Colors.cyan,

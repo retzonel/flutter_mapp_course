@@ -8,24 +8,57 @@ class ExpandedFlexibleTest extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Column(
-        children: [
-          Row(
-            children: [
-              Expanded(child: Container(color: Colors.amber, height: 20)),
-              Flexible(
-                child: Container(
-                  color: Colors.blueAccent,
-                  height: 20,
-                  child: Text(
-                    "Flexible Here",
-                    style: AppStyles.tealTitleBoldTT.copyWith(color: Colors.white),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Expanded(
+              child: Container(
+                color: Colors.amber,
+                height: 20,
+                child: Text("Hello"),
+              ),
+            ),
+
+            Row(
+              children: [
+                Expanded(child: Container(color: Colors.amber, height: 20)),
+                Flexible(
+                  child: Container(
+                    color: Colors.blueAccent,
+                    height: 20,
+                    child: Text(
+                      "Flexible Here",
+                      style: AppStyles.tealTitleBoldTT.copyWith(
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
                 ),
-              ),
-            ],
-          ),
-        ],
+              ],
+            ),
+
+            Divider(),
+
+            Row(
+              children: [
+                Flexible(
+                  flex: 10,
+                  child: Container(
+                    color: Colors.blueAccent,
+                    height: 20,
+                    child: Text(
+                      "Flexible Here",
+                      style: AppStyles.tealTitleBoldTT.copyWith(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(child: Container(color: Colors.amber, height: 20)),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

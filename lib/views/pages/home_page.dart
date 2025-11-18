@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mapp_course/data/constants.dart';
 import 'package:flutter_mapp_course/views/pages/course_page.dart';
+import 'package:flutter_mapp_course/views/pages/expanded_flexible_test.dart';
 import 'package:flutter_mapp_course/views/widgets/container_widget.dart';
 import 'package:flutter_mapp_course/views/widgets/hero_widget.dart';
 
